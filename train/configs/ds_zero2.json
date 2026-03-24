@@ -1,0 +1,47 @@
+{
+  "zero_optimization": {
+    "stage": 2,
+    "allgather_partitions": true,
+    "allgather_bucket_size": 500000000,
+    "overlap_comm": true,
+    "reduce_scatter": true,
+    "reduce_bucket_size": 500000000,
+    "contiguous_gradients": true,
+    "round_robin_gradients": true
+  },
+  "bf16": {
+    "enabled": true
+  },
+  "gradient_clipping": 1,
+  "train_micro_batch_size_per_gpu": "auto",
+  "gradient_accumulation_steps": "auto",
+  "optimizer": {
+    "type": "AdamW",
+    "params": {
+      "lr": "auto",
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "eps": 1e-8,
+      "weight_decay": "auto"
+    }
+  },
+  "scheduler": {
+    "type": "WarmupDecayLR",
+    "params": {
+      "warmup_min_lr": 0,
+      "warmup_max_lr": "auto",
+      "warmup_num_steps": "auto",
+      "total_num_steps": "auto"
+    }
+  },
+  "comms_logger": {
+    "enabled": false
+  },
+  "steps_per_print": 50,
+  "wall_clock_breakdown": false,
+  "data_efficiency": {
+    "enabled": false
+  }
+}
