@@ -1,0 +1,17 @@
+torch                              
+torchvision                        
+trl                                  
+transformers                        
+accelerate                           
+deepspeed                            
+datasets                     
+huggingface-hub             
+tokenizers
+sentencepiece
+numpy
+packaging
+psutil                  
+safetensors
+pyyaml
+tqdm
+ninja             
