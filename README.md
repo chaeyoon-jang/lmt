@@ -18,7 +18,5 @@ python -m pip install -r requirements.txt --ignore-requires-python
 MAX_JOBS=4 python -m pip install flash-attn==2.8.3 --no-build-isolation
 
 # DeepSpeed with CPU Adam / fused utils
-DS_BUILD_CPU_ADAM=1 DS_BUILD_UTILS=1 \
-  python -m pip install deepspeed==0.17.1 \
-  --global-option="build_ext" --global-option="-j8"
+pip install deepspeed==0.17.1
 ```

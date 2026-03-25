@@ -80,4 +80,4 @@ torchrun \
   --save_total_limit           3 \
   --report_to                  "tensorboard" \
   \
-  --deepspeed                  "ds_zero3.json"
+  --deepspeed                  "configs/ds_zero3.json"

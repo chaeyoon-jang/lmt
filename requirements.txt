@@ -1,5 +1,5 @@
-torch                              
-torchvision                        
+torch==2.6.0                              
+torchvision==0.21.0                        
 trl                                  
 transformers                        
 accelerate                           
@@ -8,7 +8,8 @@ datasets
 huggingface-hub             
 tokenizers
 sentencepiece
-numpy
+numpy<2.0
+pandas<3.0
 packaging
 psutil                  
 safetensors
